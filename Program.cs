@@ -35,10 +35,11 @@ void PrintArray(int[,,] inArray) // Вывод массива на консол�
         {
             for(int hight = 0; hight < inArray.GetLength(2); hight++ )
             {
-                Console.Write($"{inArray[row, colunm, hight]}\t ");
-            }    
+                Console.Write($"{inArray[row, colunm, hight]}\t");
+            }
+        System.Console.WriteLine();    
         }
-        Console.WriteLine();
+    System.Console.WriteLine();
     }
 }
 
@@ -53,9 +54,11 @@ void LineBraiking(int[,,] matrix)
             for(int column = 0; column < matrix.GetLength(1); column++)
             {
                 resultMatrix[row] = matrix[row, column, hight];
-                Console.WriteLine($"{resultMatrix[row]}{(row, column, hight)}");
+                Console.Write($" {resultMatrix[row]}{(row, column, hight)}");
             }
+            System.Console.WriteLine();
         }
+        System.Console.WriteLine();
     }
 }
 
